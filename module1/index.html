@@ -27,7 +27,7 @@
     </div>
 </header>
 <main class="main">
-    <div class="hero">
+    <section class="hero">
         <div class="container">
             <div class="hero__description">
                 <h1 class="hero__title">
@@ -44,8 +44,8 @@
         <div class="hero__container container">
             <img class="hero__image" src="images/hero-picture.png" alt="Save your data storage here.">
         </div>
-    </div>
-    <div id="about" class="about">
+    </section>
+    <section id="about" class="about">
         <div class="container about__container">
             <img src="images/article-picture.png" alt="About picture">
             <div class="about__description">
@@ -60,16 +60,16 @@
                 </p>
             </div>
         </div>
-    </div>
-    <div id="features" class="features">
+    </section>
+    <section id="features" class="features">
         <div class="container">
             <div class="features__top">
                 <h2 class="features__title">Features</h2>
                 <p class="features__description">Some of the features and advantages that we provide for those of you
                     who store data in this Data Warehouse.</p>
             </div>
-            <div class="features__cards">
-                <div class="card search">
+            <ul class="features__cards">
+                <li class="card search">
                     <div class="card__description">
                         <div class="card-wrapper">
                             <h3 class="card__title">
@@ -86,8 +86,8 @@
                             <img src="images/arrow.svg" alt="Arrow" class="card__arrow">
                         </a>
                     </div>
-                </div>
-                <div class="card access">
+                </li>
+                <li class="card access">
                     <div class="card__description">
                         <div class="card__wrapper">
                             <h3 class="card__title">
@@ -104,8 +104,8 @@
                             <img src="images/arrow.svg" alt="Arrow" class="card__arrow">
                         </a>
                     </div>
-                </div>
-                <div class="card print">
+                </li>
+                <li class="card print">
                     <div class="card__description">
                         <div class="card__wrapper">
                             <h3 class="card__title">
@@ -121,8 +121,8 @@
                             <img src="images/arrow.svg" alt="Arrow" class="card__arrow">
                         </a>
                     </div>
-                </div>
-                <div class="card security">
+                </li>
+                <li class="card security">
                     <div class="card__description">
                         <div class="card__wrapper">
                             <h3 class="card__title">
@@ -139,14 +139,112 @@
                             <img src="images/arrow.svg" alt="Arrow" class="card__arrow">
                         </a>
                     </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container testimonials__container">
+            <h2 class="testimonials__title">
+                Testimonials
+            </h2>
+            <ul class="testimonials__cards">
+                <li class="testimonial-card">
+                    <img class="testimonial-card__image" src="images/testimonials-john.jpg" alt="John Fang">
+                    <div class="testimonial-card__definition">
+                        <h4 class="testimonial-card__name">John Fang</h4>
+                        <a href="https://wordfaang.com/" class="testimonial-card__link">wordfaang.com</a>
+                        <p class="testimonial-card__description">
+                            Suspendisse ultrices at diam lectus nullam.
+                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+                            laoreet nulla.
+                        </p>
+                    </div>
+                </li>
+                <li class="testimonial-card">
+                    <img class="testimonial-card__image" src="images/testimonials-jeny.jpg" alt="Jeny Doe">
+                    <div class="testimonial-card__definition">
+                        <h4 class="testimonial-card__name">Jeny Doe</h4>
+                        <span class="testimonial-card__link">UX Engineer</span>
+                        <p class="testimonial-card__description">
+                            Suspendisse ultrices at diam lectus nullam.
+                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+                            laoreet nulla.
+                        </p>
+                    </div>
+                </li>
+                <li class="testimonial-card">
+                    <img class="testimonial-card__image" src="images/testimonials-william.jpg" alt="William">
+                    <div class="testimonial-card__definition">
+                        <h4 class="testimonial-card__name">William</h4>
+                        <span class="testimonial-card__link">Web Designer</span>
+                        <p class="testimonial-card__description">
+                            Suspendisse ultrices at diam lectus nullam.
+                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+                            laoreet nulla.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="testimonials__navigation">
+                <ul class="testimonials__list">
+                    <li class="testimonials__item testimonials__active"></li>
+                    <li class="testimonials__item"></li>
+                    <li class="testimonials__item"></li>
+                    <li class="testimonials__item"></li>
+                </ul>
+                <div class="testimonials__arrows">
+                    <img class="testimonials__arrow" src="images/testimonials-arrow-1.svg" alt="Arrow left">
+                    <img class="testimonials__arrow" src="images/testimonials-arrow-2.svg" alt="Arrow right">
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </main>
-<footer class="footer">
-    <div class="container">
-
+<footer class="footer" id="footer">
+    <div class="container footer__container">
+        <div class="footer__desc">
+            <a href="#" class="footer__home">
+                <img src="images/header-logo.svg" alt="Web Site logo">
+                <span class="footer__logo-text">DataWarehouse</span>
+            </a>
+            <address class="footer__address">
+                Warehouse Society, 234
+                <br>
+                Bahagia Ave Street
+                PRBW 29281
+            </address>
+            <address class="footer__contact">
+                <a href="mailto:info@warehouse.project" class="footer__email">info@warehouse.project</a>
+                <a href="tel:+12323434" class="footer__phone">1-232-3434 <span class="footer__span">(Main)</span></a>
+            </address>
+            <small class="footer__copyrights">
+                © Datawarehouse™, 2020. All rights reserved.
+                Company Registration Number: 21479524.
+            </small>
+        </div>
+        <div class="footer__social">
+            <h5 class="footer__title">
+                Social Media
+            </h5>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="images/linkedin.svg" alt="Linkedin" class="footer__image">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="images/facebook.svg" alt="FaceBook" class="footer__image">
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="images/reddit.svg" alt="Reddit" class="footer__image">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </footer>
 </body>
