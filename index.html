@@ -28,7 +28,8 @@
 </header>
 <main class="main">
     <section class="hero">
-        <div class="container">
+        <div class="container hero__container">
+            <img class="hero__image-mobile" src="images/hero-picture.png" alt="Save your data storage here.">
             <div class="hero__description">
                 <h1 class="hero__title">
                     Save your data storage here.
@@ -41,23 +42,27 @@
                 <a href="#features" class="btn hero__button">Learn more</a>
             </div>
         </div>
-        <div class="hero__container container">
+        <div class="hero__wrapper container">
             <img class="hero__image" src="images/hero-picture.png" alt="Save your data storage here.">
         </div>
     </section>
     <section id="about" class="about">
-        <div class="container about__container">
-            <img src="images/article-picture.png" alt="About picture">
-            <div class="about__description">
-                <h2 class="about__title">
-                    We are a high-level data storage bank
-                </h2>
-                <p class="about__text">
-                    The place to store various data that you can access at any time through the internet and where you
-                    can carry it.
-                    This very flexible storage area has a high level of security. To enter into your own data you must
-                    enter the password that you created when you registered in this Data Warehouse.
-                </p>
+        <div class="container">
+            <div class="about__container">
+                <img class="about__picture" src="images/article-picture.png" alt="About picture">
+                <div class="about__description">
+                    <h2 class="about__title">
+                        We are a high-level data storage bank
+                    </h2>
+                    <p class="about__text">
+                        The place to store various data that you can access at any time through the internet and where
+                        you
+                        can carry it.
+                        This very flexible storage area has a high level of security. To enter into your own data you
+                        must
+                        enter the password that you created when you registered in this Data Warehouse.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -144,58 +149,60 @@
         </div>
     </section>
     <section class="testimonials">
-        <div class="container testimonials__container">
-            <h2 class="testimonials__title">
-                Testimonials
-            </h2>
-            <ul class="testimonials__cards">
-                <li class="testimonial-card">
-                    <img class="testimonial-card__image" src="images/testimonials-john.jpg" alt="John Fang">
-                    <div class="testimonial-card__definition">
-                        <h4 class="testimonial-card__name">John Fang</h4>
-                        <a href="https://wordfaang.com/" class="testimonial-card__link">wordfaang.com</a>
-                        <p class="testimonial-card__description">
-                            Suspendisse ultrices at diam lectus nullam.
-                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
-                            laoreet nulla.
-                        </p>
-                    </div>
-                </li>
-                <li class="testimonial-card">
-                    <img class="testimonial-card__image" src="images/testimonials-jeny.jpg" alt="Jeny Doe">
-                    <div class="testimonial-card__definition">
-                        <h4 class="testimonial-card__name">Jeny Doe</h4>
-                        <span class="testimonial-card__link">UX Engineer</span>
-                        <p class="testimonial-card__description">
-                            Suspendisse ultrices at diam lectus nullam.
-                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
-                            laoreet nulla.
-                        </p>
-                    </div>
-                </li>
-                <li class="testimonial-card">
-                    <img class="testimonial-card__image" src="images/testimonials-william.jpg" alt="William">
-                    <div class="testimonial-card__definition">
-                        <h4 class="testimonial-card__name">William</h4>
-                        <span class="testimonial-card__link">Web Designer</span>
-                        <p class="testimonial-card__description">
-                            Suspendisse ultrices at diam lectus nullam.
-                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
-                            laoreet nulla.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <div class="testimonials__navigation">
-                <ul class="testimonials__list">
-                    <li class="testimonials__item testimonials__active"></li>
-                    <li class="testimonials__item"></li>
-                    <li class="testimonials__item"></li>
-                    <li class="testimonials__item"></li>
+        <div class="container">
+            <div class="testimonials__container">
+                <h2 class="testimonials__title">
+                    Testimonials
+                </h2>
+                <ul class="testimonials__cards">
+                    <li class="testimonial-card">
+                        <img class="testimonial-card__image" src="images/testimonials-john.jpg" alt="John Fang">
+                        <div class="testimonial-card__definition">
+                            <h4 class="testimonial-card__name">John Fang</h4>
+                            <a href="https://wordfaang.com/" class="testimonial-card__link">wordfaang.com</a>
+                            <p class="testimonial-card__description">
+                                Suspendisse ultrices at diam lectus nullam.
+                                Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+                                laoreet nulla.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="testimonial-card">
+                        <img class="testimonial-card__image" src="images/testimonials-jeny.jpg" alt="Jeny Doe">
+                        <div class="testimonial-card__definition">
+                            <h4 class="testimonial-card__name">Jeny Doe</h4>
+                            <span class="testimonial-card__link">UX Engineer</span>
+                            <p class="testimonial-card__description">
+                                Suspendisse ultrices at diam lectus nullam.
+                                Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+                                laoreet nulla.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="testimonial-card">
+                        <img class="testimonial-card__image" src="images/testimonials-william.jpg" alt="William">
+                        <div class="testimonial-card__definition">
+                            <h4 class="testimonial-card__name">William</h4>
+                            <span class="testimonial-card__link">Web Designer</span>
+                            <p class="testimonial-card__description">
+                                Suspendisse ultrices at diam lectus nullam.
+                                Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+                                laoreet nulla.
+                            </p>
+                        </div>
+                    </li>
                 </ul>
-                <div class="testimonials__arrows">
-                    <img class="testimonials__arrow" src="images/testimonials-arrow-1.svg" alt="Arrow left">
-                    <img class="testimonials__arrow" src="images/testimonials-arrow-2.svg" alt="Arrow right">
+                <div class="testimonials__navigation">
+                    <ul class="testimonials__list">
+                        <li class="testimonials__item testimonials__active"></li>
+                        <li class="testimonials__item"></li>
+                        <li class="testimonials__item"></li>
+                        <li class="testimonials__item"></li>
+                    </ul>
+                    <div class="testimonials__arrows">
+                        <img class="testimonials__arrow" src="images/testimonials-arrow-1.svg" alt="Arrow left">
+                        <img class="testimonials__arrow" src="images/testimonials-arrow-2.svg" alt="Arrow right">
+                    </div>
                 </div>
             </div>
         </div>
