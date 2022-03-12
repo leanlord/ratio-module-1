@@ -232,20 +232,23 @@ ul {
 }
 
 .search .card__description {
-    background-image: url("../images/feature-1-bg.svg");
+    background: url("../images/feature-1-bg.svg") no-repeat right;
+    background-size: cover;
 }
 
 .access .card__description {
-    background-image: url("../images/feature-2-bg.svg");
+    background: url("../images/feature-2-bg.svg") no-repeat right;
+    background-size: cover;
 }
 
 .print .card__description {
-    background-image: url("../images/feature-3-bg.svg");
+    background: url("../images/feature-3-bg.svg") no-repeat right;
+    background-size: cover;
 }
 
 .security .card__description {
-    background-image: url("../images/feature-4-bg.svg");
-    background-repeat: no-repeat;
+    background: url("../images/feature-4-bg.svg") no-repeat right;
+    background-size: cover;
 }
 
 .card__title {
@@ -753,5 +756,38 @@ ul {
 
     .card__description {
         padding: 100px 35px 33px 80px;
+    }
+}
+
+@media (max-width: 425px) {
+    .about {
+        margin-bottom: 30px;
+    }
+
+    .about__container {
+        padding: 28px;
+    }
+
+    .card__description {
+        padding: 100px 35px 35px 35px;
+    }
+
+    .testimonials__title {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-card__image {
+        margin-right: 15px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimonial-card__description {
+        font-size: 14px;
     }
 }
