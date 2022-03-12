@@ -221,10 +221,23 @@ ul {
     z-index: 1;
 }
 
+.card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 442px;
+    min-height: 358px;
+    padding: 50px 50px 33px 170px;
+    border-radius: 50px;
+}
+
+.search .card__description {
+    background-image: url("../images/feature-1-bg.svg");
+}
+
 .access .card__description {
     background-image: url("../images/feature-2-bg.svg");
 }
-
 
 .print .card__description {
     background-image: url("../images/feature-3-bg.svg");
@@ -233,17 +246,6 @@ ul {
 .security .card__description {
     background-image: url("../images/feature-4-bg.svg");
     background-repeat: no-repeat;
-}
-
-.card__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 442px;
-    min-height: 358px;
-    padding: 50px 50px 33px 170px;
-    background-image: url("../images/feature-1-bg.svg");
-    border-radius: 50px;
 }
 
 .card__title {
